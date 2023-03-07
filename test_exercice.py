@@ -26,7 +26,7 @@ def test_email_with_user_input_no_dot(monkeypatch):
     assert get_email_from_input() is None
 
 def test_email_with_user_input_correct(monkeypatch):
-    monkeypatch.setattr('sys.stdin', io.StringIO('petra@adaltas.com'))
+    monkeypatch.setattr('sys.stdin', io.StringIO('petra@adaltas.com!')) #modify to make the test passe
     assert get_email_from_input() == 'petra@adaltas.com'
 
 # Do the same for the following functions
