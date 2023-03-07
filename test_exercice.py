@@ -1,4 +1,5 @@
 # The simplest function to get the user email (copy to src/user_functions.py)
+# just a quick modification to check something with git
 def get_email_from_input():
     """ Contains '@' and '.' """
     return input("Write down your email: ")
